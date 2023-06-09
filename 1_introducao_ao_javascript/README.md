@@ -53,3 +53,41 @@ reproduzir animações, textos de rolagem ou arquivos de áudio.
 
 ## Configurando o ambiente de desenvolvimento.
 
+- Instale um editor de texto: Escolha um editor de texto adequado para desenvolvimento JavaScript, como o Visual Studio Code, Atom, Sublime Text, ou qualquer outro de sua preferência. Certifique-se de que o editor escolhido ofereça recursos avançados para edição de código, como realce de sintaxe e autocompletar.
+
+**JavaScript, além de uma linguagem muito completa, possui diversos modos de ser utilizada. Uma dessas maneiras é rodando via Node.js, um ambiente de execução de JavaScript utilizado para criar ferramentas de linha de comando, sistemas no backend, interação com hardware e mais.**
+
+**Minha recomendação seria usar o Visual Studio Code link: https://code.visualstudio.com/download**
+
+- Instale o Node.js: O Node.js permite que você execute JavaScript fora do navegador, facilitando o desenvolvimento de aplicativos do lado do servidor. Acesse o site oficial do Node.js (https://nodejs.org) e baixe a versão mais recente adequada para o seu sistema operacional. Siga as instruções de instalação para concluí-la.
+
+- Crie uma pasta para o seu projeto: Escolha um diretório em seu computador onde você deseja armazenar seus projetos JavaScript. Crie uma nova pasta nesse diretório e dê um nome significativo para o seu projeto.
+
+- Abra o editor de texto: Abra o editor de texto que você instalou anteriormente e navegue até a pasta do seu projeto.
+
+- Inicialize um projeto Node.js: Abra o terminal no seu editor de texto ou em qualquer terminal do sistema operacional. Navegue até a pasta do seu projeto usando o comando cd caminho/para/o/diretório/do/seu/projeto. Em seguida, execute o seguinte comando para inicializar um novo projeto Node.js:
+
+```markdown
+npm init -y
+```
+
+**Esse comando criará um arquivo package.json que gerenciará as dependências e configurações do seu projeto.**
+
+- Instale bibliotecas e dependências: Dependendo das necessidades do seu projeto, você pode precisar instalar bibliotecas ou pacotes adicionais. Use o comando npm install seguido do nome do pacote para instalá-lo. Por exemplo:
+
+
+```markdown
+npm install nome-do-pacote
+```
+
+- Comece a escrever código JavaScript: Agora você está pronto para começar a escrever seu código JavaScript. Crie um novo arquivo com a extensão .js dentro da pasta do seu projeto e comece a escrever seu código JavaScript.
+
+- Execute o código JavaScript: Para executar seu código JavaScript, você pode usar o Node.js no terminal. Navegue até a pasta do seu projeto e execute o seguinte comando:
+
+```markdown
+node nome-do-arquivo.js
+```
+
+Isso executará o arquivo JavaScript no Node.js e você verá a saída no terminal.
+
+Esses são os passos básicos para configurar o ambiente de desenvolvimento JavaScript. À medida que você progride, pode explorar ferramentas adicionais, como sistemas de construção (por exemplo, webpack), frameworks (por exemplo, React, Angular, Vue.js) e testadores (por exemplo, Jest, Mocha), dependendo dos requisitos do seu projeto.
