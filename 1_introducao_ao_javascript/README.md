@@ -1,11 +1,11 @@
-**Introdução ao JavaScript**
+# Introdução ao JavaScript
 
 - Introdução ao JavaScript, sua história e aplicações.
 - Configurando o ambiente de desenvolvimento.
 
-# Introdução ao JavaScript, sua história e aplicações.
+## Introdução ao JavaScript, sua história e aplicações.
 
-*O que é JavaScript*
+### O que é JavaScript
 
 JavaScript é uma linguagem de script orientada a objetos, plataforma cruzada usada para tornar as páginas da Web interativas (por exemplo, com animações complexas, botões clicáveis, menus pop-up etc.), conhecida como uma linguagem de programação leve e interpretada. Há também versões mais avançadas do lado do servidor do JavaScript, como Node.js, que permitem adicionar mais funcionalidades a um site do que baixar arquivos (como colaboração em tempo real entre vários computadores). Dentro de um ambiente de host (por exemplo, um navegador da Web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles.
 
@@ -17,7 +17,7 @@ JavaScript tem uma biblioteca padrão de objetos, como: Array, Date, e Math, e u
 
 Isso significa que, no navegador, o JavaScript pode alterar a aparência da página da Web (DOM). E, da mesma forma, o JavaScript Node.js no servidor pode responder a solicitações personalizadas enviadas por código executado no navegador.
 
-*História*
+### História
 
 O JavaScript 1.0 foi lançado em 1995, quando a internet ainda era uma invenção relativamente nova. O primeiro navegador da web, o Mosaic, havia sido lançado há apenas dois anos, e o HTML era a única ferramenta para construir sites - na época, o CSS ainda era uma proposta e não seria oficialmente lançado até 1996. Em vista disso, a criação de sites ainda era uma habilidade um tanto fácil de aprender, algo que era acessível não apenas a engenheiros de software, mas também a desenvolvedores e designers inexperientes.
 
@@ -44,12 +44,12 @@ adicionar botões de “voltar” para navegar facilmente em sites;
 preservar o estado entre as páginas da web para rastrear as ações do usuário; e
 reproduzir animações, textos de rolagem ou arquivos de áudio.
 
-*Aplicações*
+### Aplicações
 
 * Adicionar comportamento interativo nas páginas da web
 * Criar página na web e apps
 * Construir web servers e desenvolver aplicações
 * Desenvolvimento de jogos
 
-# Configurando o ambiente de desenvolvimento.
+## Configurando o ambiente de desenvolvimento.
 
