@@ -29,19 +29,21 @@ Para declarar uma variável em JavaScript, você pode usar a palavra-chave var, 
 
 **Observação: as palavras-chaves podem começar com letras, $ ou _. Não podem começar com números. É possível usar letras ou números. É possível usar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.**
 
-### var: Antes do ES6 (ECMAScript 2015), a palavra-chave var era a única forma de declarar variáveis em JavaScript. No entanto, ela possui algumas características que podem ser consideradas problemáticas:
+- Formas de declarar variáveis:
+
+var: Antes do ES6 (ECMAScript 2015), a palavra-chave var era a única forma de declarar variáveis em JavaScript. No entanto, ela possui algumas características que podem ser consideradas problemáticas:
 
 - Escopo de função: A variável declarada com var tem escopo de função, o que significa que ela é visível dentro da função em que foi declarada, independentemente do bloco em que está contida.
 - Hoisting: Variáveis declaradas com var são "içadas" para o topo do escopo em que foram definidas. Isso permite que você acesse a variável antes mesmo de ela ser declarada, embora seu valor seja undefined até a atribuição real.
 - Reatribuição e redeclaração: Variáveis declaradas com var podem ser reatribuídas (ter seu valor alterado) e redeclaradas (declaradas novamente no mesmo escopo) sem gerar erros.
 
-### let: A palavra-chave let foi introduzida no ES6 e é preferível ao uso de var na maioria dos casos. Ela resolve algumas das limitações do var:
+let: A palavra-chave let foi introduzida no ES6 e é preferível ao uso de var na maioria dos casos. Ela resolve algumas das limitações do var:
 
 - Escopo de bloco: A variável declarada com let tem escopo de bloco, o que significa que ela é visível apenas dentro do bloco em que foi declarada, como um par de chaves {}.
 - Hoisting limitado: Ao contrário do var, let não sofre hoisting para o topo do escopo, então você precisa declarar a variável antes de usá-la.
 - Reatribuição: Você pode alterar o valor de uma variável declarada com let, mas não pode redeclará-la no mesmo escopo.
 
-### const: A palavra-chave const também foi introduzida no ES6 e é usada para declarar constantes, ou seja, variáveis que têm um valor fixo que não pode ser alterado posteriormente:
+const: A palavra-chave const também foi introduzida no ES6 e é usada para declarar constantes, ou seja, variáveis que têm um valor fixo que não pode ser alterado posteriormente:
 
 - Escopo de bloco: Assim como o let, a variável declarada com const tem escopo de bloco.
 - Atribuição única: Uma vez atribuído um valor a uma variável const, esse valor não pode ser alterado posteriormente. Isso não significa que o valor em si é imutável, apenas que a variável não pode ser atribuída a outro valor.
@@ -53,17 +55,17 @@ Em resumo, let é usado quando você precisa de uma variável que pode ter seu v
 
 ## Operadores e expressões.
 
-* Operadores Aritméticos: São usados para realizar operações matemáticas em números.
+Operadores Aritméticos: São usados para realizar operações matemáticas em números.
 
 Alguns exemplos são:
 
-+: Soma dois valores.
--: Subtrai um valor do outro.
-*: Multiplica dois valores.
-/: Divide um valor pelo outro.
-%: Retorna o resto da divisão entre dois valores.
-++: Incrementa o valor de uma variável em 1.
---: Decrementa o valor de uma variável em 1.
+- +: Soma dois valores.
+- -: Subtrai um valor do outro.
+- *: Multiplica dois valores.
+- /: Divide um valor pelo outro.
+- %: Retorna o resto da divisão entre dois valores.
+- ++: Incrementa o valor de uma variável em 1.
+- --: Decrementa o valor de uma variável em 1.
 
 **Em JavaScript, é possível alterar o valor de uma variável de forma simples usando operadores de atribuição combinados com operadores aritméticos. Isso permite realizar a operação desejada diretamente na variável.**
 
@@ -77,32 +79,32 @@ Alguns exemplos são:
 
 Ordem de precedência:
 
-1. ()
-2. **
-3. * / % (Se tiver mais de desses a ordem de execução será da esquerda para direita)
-4. + -
+1. "()"
+2. "**"
+3. "*" "/" "%" (Se tiver mais de desses a ordem de execução será da esquerda para direita)
+4. "+" "-"
 
-* Operadores de Comparação: São usados para comparar valores e retornar um valor booleano (true ou false).
+Operadores de Comparação: São usados para comparar valores e retornar um valor booleano (true ou false).
 
 Alguns exemplos são:
 
-==: Verifica se dois valores são iguais.
-!=: Verifica se dois valores são diferentes.
-===: Verifica se dois valores são iguais e do mesmo tipo.
-!==: Verifica se dois valores são diferentes ou de tipos diferentes.
->: Verifica se o valor à esquerda é maior que o valor à direita.
-<: Verifica se o valor à esquerda é menor que o valor à direita.
->=: Verifica se o valor à esquerda é maior ou igual ao valor à direita.
-<=: Verifica se o valor à esquerda é menor ou igual ao valor à direita.
+- "==": Verifica se dois valores são iguais.
+- "!=": Verifica se dois valores são diferentes.
+- "===": Verifica se dois valores são iguais e do mesmo tipo.
+- "!==": Verifica se dois valores são diferentes ou de tipos diferentes.
+- ">": Verifica se o valor à esquerda é maior que o valor à direita.
+- "<": Verifica se o valor à esquerda é menor que o valor à direita.
+- ">=": Verifica se o valor à esquerda é maior ou igual ao valor à direita.
+- "<=": Verifica se o valor à esquerda é menor ou igual ao valor à direita.
 
-* Operadores Lógicos: São usados para combinar ou negar condições e retornar um valor booleano. 
+Operadores Lógicos: São usados para combinar ou negar condições e retornar um valor booleano. 
 
 Os principais operadores lógicos são:
 
-&&: Retorna true se ambas as condições forem verdadeiras.
-||: Retorna true se pelo menos uma das condições for verdadeira.
-!: Nega uma condição, retornando o valor oposto.
-?=: Operador ternário. (Exemplo: teste ? true : false)
+- &&: Retorna true se ambas as condições forem verdadeiras.
+- ||: Retorna true se pelo menos uma das condições for verdadeira.
+- !: Nega uma condição, retornando o valor oposto.
+- ?=: Operador ternário. (Exemplo: teste ? true : false)
 
 Ordem de precedência:
 
