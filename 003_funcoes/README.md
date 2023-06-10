@@ -172,4 +172,100 @@ Compreender o escopo de variáveis e as closures em JavaScript é importante par
 
 ## Funções anônimas e de ordem superior.
 
+Funções Anônimas:
+
+Uma função anônima em JavaScript é uma função sem um nome definido. Em vez de declarar uma função com um identificador, você pode atribuir a função a uma variável ou passá-la como um argumento para outra função.
+
+As funções anônimas são úteis em várias situações. Aqui estão alguns casos de uso comuns:
+
+1. Passar uma função como argumento para outra função (callback):
+
+Isso permite que você defina um comportamento personalizado que será executado dentro de outra função. O exemplo abaixo mostra como usar uma função anônima como um callback em uma função de temporizador:
+
+```javascript
+    setTimeout(function() {
+        console.log("A função anônima foi executada após 2 segundos");
+    }, 2000);
+```
+
+Nesse exemplo, uma função anônima é passada como o primeiro argumento para a função setTimeout. Essa função será executada após um atraso de 2 segundos.
+
+2.Definir uma função dentro de um objeto:
+
+Você pode criar funções anônimas para atribuir a propriedades de objetos. Essa técnica é comumente usada para definir métodos em objetos:
+
+```javascript
+    let pessoa = {
+        nome: "João",
+        dizerOla: function() {
+            console.log("Olá, " + this.nome + "!");
+        }
+    };
+
+    pessoa.dizerOla(); // exibe "Olá, João!"
+```
+
+Nesse exemplo, a função anônima é atribuída à propriedade dizerOla do objeto pessoa. A função pode acessar a propriedade nome usando this.
+
+> As funções anônimas são úteis em várias situações, como quando você precisa passar uma função como argumento para outra função, definir uma função como propriedade de um objeto ou criar uma função imediatamente invocada.
+
+Funções de Ordem Superior:
+
+As funções de ordem superior em JavaScript são funções que podem receber outras funções como argumentos e/ou retornar funções como resultados. Em outras palavras, essas funções tratam outras funções como valores e as manipulam de várias maneiras.
+
+```javascript
+    function executarOperacao(operacao, a, b) {
+        return operacao(a, b);
+    }
+
+    function soma(a, b) {
+        return a + b;
+    }
+
+    let resultado = executarOperacao(soma, 2, 3);
+    console.log(resultado); // exibe 5
+```
+
+Nesse exemplo, a função executarOperacao é uma função de ordem superior que recebe uma função operacao como argumento. Essa função operacao é então invocada dentro da função executarOperacao, passando os argumentos a e b.
+
+As funções de ordem superior são amplamente utilizadas em JavaScript para implementar conceitos como callbacks, mapeamento (map), filtragem (filter), redução (reduce) e muito mais. Elas permitem uma programação mais flexível e funcional.
+
+As funções de ordem superior são poderosas e permitem um estilo de programação mais funcional. Aqui estão algumas maneiras comuns de usá-las:
+
+1.Passar funções como argumentos:
+
+As funções de ordem superior podem receber outras funções como argumentos. Isso permite que você personalize o comportamento da função de ordem superior. Um exemplo clássico é a função map, que itera sobre um array e aplica uma transformação em cada elemento:
+
+```javascript
+    let numeros = [1, 2, 3, 4, 5];
+
+    let quadrados = numeros.map(function(numero) {
+        return numero * numero;
+    });
+
+    console.log(quadrados); // exibe [1, 4, 9, 16, 25]
+```
+
+Nesse exemplo, a função anônima passada para map define a transformação a ser aplicada a cada elemento do array.
+
+2.Retornar funções como resultados:
+
+As funções de ordem superior também podem retornar funções. Isso é útil quando você deseja criar funções personalizadas com base em determinados parâmetros ou configurações. Um exemplo é uma função de fábrica:
+
+```javascript
+    function criarSaudacao(prefixo) {
+        return function(nome) {
+            console.log(prefixo + " " + nome);
+        };
+    }
+
+    let saudacaoFormal = criarSaudacao("Bom dia,");
+    saudacaoFormal("João"); // exibe "Bom dia, João"
+
+    let saudacaoInformal = criarSaudacao("Oi,");
+    saudacaoInformal("Maria"); // exibe "Oi, Maria"
+```
+
+> Nesse exemplo, a função criarSaudacao retorna uma função anônima. A função retornada captura o valor do parâmetro prefixo e o combina com o nome fornecido quando é invocada.
+
 ## Recursão.

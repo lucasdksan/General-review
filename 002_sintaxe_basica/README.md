@@ -118,7 +118,7 @@ No JavaScript, existem três estruturas condicionais principais: if, else e swit
 
 Estrutura if: A estrutura if permite executar um bloco de código se uma condição especificada for avaliada como verdadeira.
 
-```markdown
+```javascript
     if (condição) {
     // código a ser executado se a condição for verdadeira
     }
@@ -126,7 +126,7 @@ Estrutura if: A estrutura if permite executar um bloco de código se uma condiç
 
 Exemplo:
 
-```markdown
+```javascript
     let idade = 18;
     if (idade >= 18) {
         console.log("Você é maior de idade.");
@@ -135,7 +135,7 @@ Exemplo:
 
 Estrutura if-else: A estrutura if-else permite executar um bloco de código se a condição for avaliada como verdadeira e outro bloco de código se a condição for avaliada como falsa.
 
-```markdown
+```javascript
     if (condição) {
         // código a ser executado se a condição for verdadeira
     } else {
@@ -145,7 +145,7 @@ Estrutura if-else: A estrutura if-else permite executar um bloco de código se a
 
 Exemplo:
 
-```markdown
+```javascript
     let idade = 16;
     if (idade >= 18) {
         console.log("Você é maior de idade.");
@@ -156,7 +156,7 @@ Exemplo:
 
 Estrutura switch: A estrutura switch é usada quando você tem múltiplas condições para verificar. Ela permite que você especifique diferentes casos com base em um valor e execute o bloco de código correspondente ao caso correspondente.
 
-```markdown
+```javascript
     switch (expressão) {
         case valor1:
             // código a ser executado se a expressão for igual a valor1
@@ -171,7 +171,7 @@ Estrutura switch: A estrutura switch é usada quando você tem múltiplas condi�
 
 Exemplo:
 
-```markdown
+```javascript
     let diaSemana = 1;
     switch (diaSemana) {
         case 1:
@@ -198,7 +198,7 @@ No JavaScript, existem três estruturas de repetição principais: for, while e 
 
 Estrutura for: A estrutura for é usada quando você conhece o número de iterações antecipadamente. Ela possui três partes separadas por ponto e vírgula: inicialização, condição e expressão final.
 
-```markdown
+```javascript
     for (inicialização; condição; expressão final) {
         // código a ser repetido
     }
@@ -206,7 +206,7 @@ Estrutura for: A estrutura for é usada quando você conhece o número de itera�
 
 Exemplo:
 
-```markdown
+```javascript
     for (let i = 0; i < 5; i++) {
         console.log(i);
     }
@@ -214,7 +214,7 @@ Exemplo:
 
 Estrutura while: A estrutura while é usada quando você não sabe o número exato de iterações e deseja repetir um bloco de código enquanto uma condição especificada for avaliada como verdadeira.
 
-```markdown
+```javascript
     while (condição) {
     // código a ser repetido
     }
@@ -222,7 +222,7 @@ Estrutura while: A estrutura while é usada quando você não sabe o número exa
 
 Exemplo:
 
-```markdown
+```javascript
     let i = 0;
     while (i < 5) {
         console.log(i);
@@ -232,7 +232,7 @@ Exemplo:
 
 Estrutura do-while: A estrutura do-while é semelhante à estrutura while, mas a diferença é que o bloco de código é executado primeiro e a condição é verificada posteriormente. Isso garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição inicialmente for falsa.
 
-```markdown
+```javascript
     do {
         // código a ser repetido
     } while (condição);
@@ -240,7 +240,7 @@ Estrutura do-while: A estrutura do-while é semelhante à estrutura while, mas a
 
 Exemplo:
 
-```markdown
+```javascript
     let i = 0;
     do {
         console.log(i);
