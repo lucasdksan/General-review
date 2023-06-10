@@ -19,7 +19,7 @@ do {
     str = aux == 0 ? `Digite seu nome completo: ` : `Por favor, digite seu nome completo:`;
     nameLoop = prompt("Digite seu nome completo: ");
     aux++;
-} while(nameLoop == undefined || nameLoop == null);
+} while(nameLoop == undefined || nameLoop == null || nameLoop == "");
 
 alert("O nome digita foi: "+nameLoop);
 

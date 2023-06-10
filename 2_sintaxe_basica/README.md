@@ -23,11 +23,11 @@ Em JavaScript, você pode usar variáveis para armazenar valores e manipulá-los
 
 7. Undefined: Representa uma variável que foi declarada, mas não possui um valor atribuído.
 
-**Além desses tipos de dados básicos, JavaScript também suporta outros tipos de dados, como datas, funções e expressões regulares.**
+> Além desses tipos de dados básicos, JavaScript também suporta outros tipos de dados, como datas, funções e expressões regulares.
 
 Para declarar uma variável em JavaScript, você pode usar a palavra-chave var, let ou const, seguida pelo nome da variável
 
-**Observação: as palavras-chaves podem começar com letras, $ ou _. Não podem começar com números. É possível usar letras ou números. É possível usar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.**
+> Observação: as palavras-chaves podem começar com letras, $ ou _. Não podem começar com números. É possível usar letras ou números. É possível usar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.
 
 Formas de declarar variáveis:
 
