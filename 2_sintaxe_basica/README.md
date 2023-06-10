@@ -29,7 +29,7 @@ Para declarar uma variável em JavaScript, você pode usar a palavra-chave var, 
 
 **Observação: as palavras-chaves podem começar com letras, $ ou _. Não podem começar com números. É possível usar letras ou números. É possível usar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.**
 
-- Formas de declarar variáveis:
+Formas de declarar variáveis:
 
 var: Antes do ES6 (ECMAScript 2015), a palavra-chave var era a única forma de declarar variáveis em JavaScript. No entanto, ela possui algumas características que podem ser consideradas problemáticas:
 
@@ -67,15 +67,15 @@ Alguns exemplos são:
 - ++: Incrementa o valor de uma variável em 1.
 - --: Decrementa o valor de uma variável em 1.
 
-**Em JavaScript, é possível alterar o valor de uma variável de forma simples usando operadores de atribuição combinados com operadores aritméticos. Isso permite realizar a operação desejada diretamente na variável.**
+> Em JavaScript, é possível alterar o valor de uma variável de forma simples usando operadores de atribuição combinados com operadores aritméticos. Isso permite realizar a operação desejada diretamente na variável.
 
-**Por exemplo se let x = 10 e quero alterar esse valor para x = x - 5 é possível fazer essa alteração dessa forma x -= 5**
+> Por exemplo se let x = 10 e quero alterar esse valor para x = x - 5 é possível fazer essa alteração dessa forma x -= 5
 
-**É possível fazer essa alteração com qualquer operador aritmético (+=, -=, *=, /= e %=).**
+> É possível fazer essa alteração com qualquer operador aritmético (+=, -=, *=, /= e %=).
 
-**Esses operadores combinados realizam a operação aritmética entre o valor atual da variável e o valor especificado, e atribuem o resultado de volta à própria variável. Eles são úteis para simplificar a atualização de valores de variáveis de forma mais concisa.**
+> Esses operadores combinados realizam a operação aritmética entre o valor atual da variável e o valor especificado, e atribuem o resultado de volta à própria variável. Eles são úteis para simplificar a atualização de valores de variáveis de forma mais concisa.
 
-**É importante ressaltar que esses operadores combinados podem ser utilizados com outros tipos de dados além de números, como strings ou arrays, desde que a operação aritmética seja aplicável ou apropriada ao contexto em que estão sendo utilizados.**
+> É importante ressaltar que esses operadores combinados podem ser utilizados com outros tipos de dados além de números, como strings ou arrays, desde que a operação aritmética seja aplicável ou apropriada ao contexto em que estão sendo utilizados.
 
 Ordem de precedência:
 
