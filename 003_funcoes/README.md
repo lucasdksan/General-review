@@ -130,7 +130,7 @@ Exemplo:
 
 ```javascript
     function saudacao() {
-    let nome = "Maria"; // variável local
+        let nome = "Maria"; // variável local
         console.log("Olá, " + nome + "!");
     }
 
@@ -268,4 +268,51 @@ As funções de ordem superior também podem retornar funções. Isso é útil q
 
 > Nesse exemplo, a função criarSaudacao retorna uma função anônima. A função retornada captura o valor do parâmetro prefixo e o combina com o nome fornecido quando é invocada.
 
+Callbacks:
+
+Em JavaScript, um callback é uma função que é passada como argumento para outra função e é executada após a conclusão de uma determinada operação ou evento assíncrono. Os callbacks são amplamente utilizados para controlar o fluxo de execução em situações em que uma operação leva tempo para ser concluída, como operações de E/S (entrada/saída), chamadas de API assíncronas ou manipulação de eventos.
+
+A principal característica dos callbacks é que eles permitem que você especifique um comportamento personalizado a ser executado após uma determinada ação ou evento. Quando a operação assíncrona é concluída, a função de callback é chamada, permitindo que você lide com os resultados ou execute ações adicionais.
+
+```javascript
+    function fetchUserData(callback) {
+    // Simulação de chamada de API assíncrona
+        setTimeout(function() {
+            const userData = { name: "João", age: 30 };
+            callback(userData);
+        }, 2000);
+    }
+
+    function processUserData(userData) {
+        console.log("Nome: " + userData.name);
+        console.log("Idade: " + userData.age);
+    }
+
+    fetchUserData(processUserData);
+```
+
+Nesse exemplo, a função fetchUserData simula uma chamada de API assíncrona usando setTimeout. Quando os dados do usuário estão disponíveis, a função de callback processUserData é invocada para processar os dados recebidos.
+
 ## Recursão.
+
+Recursão é um conceito em programação onde uma função chama a si mesma repetidamente até atingir uma condição de parada. A função que chama a si mesma é chamada de função recursiva. A recursão é uma poderosa técnica de resolução de problemas que permite que um problema complexo seja dividido em subproblemas menores e mais simples.
+
+Aqui está um exemplo simples de uma função recursiva em JavaScript que calcula o fatorial de um número:
+
+```javascript
+    function fatorial(n) {
+        if (n === 0 || n === 1) {
+            return 1; // condição de parada
+        } else {
+            return n * fatorial(n - 1); // chamada recursiva
+        }
+    }
+
+    console.log(fatorial(5)); // exibe 120
+```
+
+Nesse exemplo, a função fatorial calcula o fatorial de um número n. A condição de parada é definida quando n é igual a 0 ou 1, pois o fatorial de 0 e 1 é 1. Caso contrário, a função chama a si mesma com um valor menor de n e multiplica o n atual pelo fatorial do número anterior. Esse processo continua até que a condição de parada seja alcançada.
+
+É importante garantir que uma função recursiva tenha uma condição de parada bem definida para evitar que ela entre em um loop infinito. Sem uma condição de parada, a função continuará chamando a si mesma indefinidamente.
+
+A recursão pode ser usada para resolver uma variedade de problemas, como percorrer estruturas de dados complexas (como árvores ou listas encadeadas), resolver problemas matemáticos, implementar algoritmos de busca e muito mais. No entanto, é importante usar a recursão com cuidado, pois ela pode consumir muitos recursos, especialmente em problemas com muitas chamadas recursivas ou profundidade recursiva muito grande. Em alguns casos, é possível otimizar a recursão usando técnicas como a recursão de cauda ou a iteração.
