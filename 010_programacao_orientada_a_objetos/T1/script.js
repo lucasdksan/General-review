@@ -25,5 +25,20 @@ function Persona(name, age, localization, academicEducation){
 
 const lucas = new Persona(dataPersona.name, dataPersona.age, dataPersona.localization, dataPersona.academicEducation);
 
+const personaObject = {
+    name: "",
+    age: 0,
+    academicEducation: "",
+    salutation: function(){
+        return "Olá, meu nome é "+ this.name;
+    }
+}
+
+const lucasObject = Object.create(personaObject);
+lucasObject.name = "Lucas da Silva Leoncio";
+lucasObject.age = 24;
+lucasObject.academicEducation = "Dev Front End";
+
 console.log("Forma 1: ", dataPersona.salutation());
 console.log("Forma 2: ", lucas.salutation());
+console.log("Forma 3: ", lucasObject.salutation());
