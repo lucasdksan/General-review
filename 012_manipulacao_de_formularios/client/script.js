@@ -1,4 +1,8 @@
-function validationEmail(email){
+function printMsn(data){
+    alert(data.msn);
+}
+
+function validationEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailRegex.test(email.value)) {
@@ -12,21 +16,36 @@ function validationEmail(email){
     };
 }
 
-function sendData(email, password){
-    const formData = {
-        email,
-        password
-    };
+function sendData(email, password) {
+    const url = "http://localhost:3009/";
+    const formData = { email: email, password: password };
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    }
 
-    // fetch("",{
-    //     method: 'POST',
-    //     body: formData
-    // });
+    console.log(options)
 
-    console.log(formData);
+    fetch(url, options)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Erro na requisição. Status: ' + response.status);
+            }
+
+            return response.json();
+        })
+        .then(data => {
+            printMsn(data);
+        })
+        .catch(error => {
+            console.error('Erro na requisição:', error);
+        });
 }
 
-function formData(event){
+function formData(event) {
     event.preventDefault();
 
     const emailInput = document.querySelector("#emailInput");
@@ -35,7 +54,7 @@ function formData(event){
     const passwordValue = passwordInput.value;
     const validateEmail = validationEmail(emailValue);
 
-    if(!validateEmail){
+    if (!validateEmail) {
         alert('Por favor, insira um email válido.');
         return;
     }
@@ -43,7 +62,7 @@ function formData(event){
     sendData(emailValue, passwordValue);
 }
 
-function startForm(){
+function startForm() {
     const formElement = document.querySelector("main form");
 
     formElement.addEventListener("submit", formData);
