@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Session Storage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html,
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input {
+            border: 0px;
+            outline: 0px;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        p,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0px;
+        }
+
+        fieldset {
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+    <style>
+        body {
+            background-color: brown;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            max-width: 320px;
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+            height: 420px;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        form fieldset label {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: brown;
+            text-transform: capitalize;
+            font-size: 16px;
+        }   
+
+        form fieldset input {
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid brown;
+            padding: 0 10px;
+        }
+
+        form button {
+            width: 150px;
+            height: 40px;
+            background-color: brown;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <label for="emailField">Email</label>
+                <input type="email" name="email" id="emailField" />
+            </fieldset>
+            <fieldset>
+                <label for="passwordField">Senha</label>
+                <input type="password" name="password" id="passwordField" />
+            </fieldset>
+            <fieldset>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
