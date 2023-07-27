@@ -60,7 +60,6 @@ Este projeto destina-se a conter toda a minha revisão "geral" do JavaScript com
     - Exploração de APIs do navegador, como geolocalização, câmera, microfone, notificações, armazenamento offline, etc.
     - Utilização de bibliotecas e frameworks para simplificar o uso das Web APIs.
     - Trabalho com eventos e manipulação de interações do usuário.
-    - Uso de APIs como Geolocalização, Notificações, Vídeo/Aúdio, etc.
 ###  15 - AJAX e Fetch API
     - Envio e recebimento de dados assincronamente.
     - Utilização do objeto XMLHttpRequest.
