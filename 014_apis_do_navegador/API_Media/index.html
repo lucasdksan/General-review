@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #videoPreview {
+            transform: scaleX(-1);
+        }
+    </style>
+    <title>Api Media</title>
+</head>
+<body>  
+    <div>
+        <video id="videoPreview" autoplay playsinline></video>
+        <button class="startCam">Ativar câmera</button>
+        <button id="captureButton">Capturar</button>
+        <button id="stopButton">Parar Câmera</button>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
